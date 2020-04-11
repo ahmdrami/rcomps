@@ -1,7 +1,6 @@
 import React from 'react'
-import { RouteComponentProps } from '@reach/router'
 
-const Home: React.FunctionComponent<RouteComponentProps> = (props) => {
+const Home: React.FunctionComponent = (props) => {
   return <h1>Home</h1>
 }
 
