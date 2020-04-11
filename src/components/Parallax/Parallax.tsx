@@ -2,8 +2,9 @@
 import { jsx, Grid, Styled } from 'theme-ui'
 import { useRef } from 'react'
 import gsap from 'gsap'
+import { RouteComponentProps } from '@reach/router'
 
-const Parallax: React.FunctionComponent = () => {
+const Parallax: React.FunctionComponent<RouteComponentProps> = () => {
   const rootEl = useRef(null)
   const onMouseOver = (event: any) => {
     event.preventDefault()
@@ -32,7 +33,7 @@ const Parallax: React.FunctionComponent = () => {
       ref={rootEl}
       onMouseMove={onMouseOver}
       gap={0}
-      sx={{ height: '100vh' }}
+      sx={{ height: '100%' }}
     >
       <Styled.h1
         sx={{
@@ -42,14 +43,14 @@ const Parallax: React.FunctionComponent = () => {
           justifySelf: 'center',
           zIndex: 1,
           color: 'white',
-          fontSize: '102px',
+          fontSize: 96,
         }}
       >
         HOT AIR BALLOONS
       </Styled.h1>
       <div sx={{ gridRow: 1, gridColumn: 1 }}>
         <img
-          sx={{ height: '100%', width: '100%', objectFit: 'cover' }}
+          sx={{ height: '100vh', width: '100%', objectFit: 'cover' }}
           src="/static/images/balloons.jpg"
           alt="Balloons"
         />
