@@ -2,9 +2,8 @@
 import { jsx, Grid, Styled } from 'theme-ui'
 import { useRef } from 'react'
 import gsap from 'gsap'
-import { RouteComponentProps } from '@reach/router'
 
-const Parallax: React.FunctionComponent<RouteComponentProps> = () => {
+const Parallax: React.FunctionComponent = () => {
   const rootEl = useRef(null)
   const onMouseOver = (event: any) => {
     event.preventDefault()
