@@ -1,8 +1,7 @@
 export default {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
-    body:
-      'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    body: 'system-ui, -apple-system, BlinkMacSystemFont, "Roboto", sans-serif',
     heading: 'inherit',
     monospace: 'Menlo, monospace',
   },
@@ -19,8 +18,8 @@ export default {
   colors: {
     text: '#000',
     background: '#fff',
-    primary: '#07c',
-    secondary: '#30c',
+    primary: '#FF1654',
+    secondary: '#247BA0',
     muted: '#f6f6f6',
   },
   styles: {
@@ -106,6 +105,19 @@ export default {
     },
     img: {
       maxWidth: '100%',
+    },
+  },
+  buttons: {
+    primary: {
+      color: 'background',
+      bg: 'primary',
+      '&:hover': {
+        bg: 'text',
+      },
+    },
+    secondary: {
+      color: 'background',
+      bg: 'secondary',
     },
   },
 }
