@@ -1,22 +1,9 @@
-import React from 'react'
-import { Button } from 'theme-ui'
-import { action } from '@storybook/addon-actions'
-import { select, withKnobs } from '@storybook/addon-knobs'
+import React, { FunctionComponent } from 'react'
+import StyledButton from './Button'
+
+export const Default: FunctionComponent = () => <StyledButton variant="secondary">Hi</StyledButton>
 
 export default {
-  title: 'Component|Button',
-  component: Button,
-  decorators: [withKnobs],
+  title: 'Components|Button',
+  component: StyledButton,
 }
-
-export const Default = () => (
-  <Button onClick={action('click')}>Primary Button</Button>
-)
-export const Secondary = () => (
-  <Button
-    variant={select('Variant', ['primary', 'secondary'], 'primary')}
-    onClick={action('click')}
-  >
-    Secondary Button
-  </Button>
-)
