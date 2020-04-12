@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import { Button } from 'theme-ui'
-
-interface StyledButtonProps {
+type StyledButtonProps = {
   onClick?: any
   variant: 'secondary' | 'primary'
 }
