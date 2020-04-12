@@ -12,7 +12,8 @@
     "prepare": "yarn build",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "release": "auto shipit"
   },
   "files": [
     "dist"
@@ -59,9 +60,7 @@
     "source-map-loader": "^0.2.4",
     "ts-jest": "^25.3.1",
     "ts-loader": "^6.2.2",
-    "typescript": "^3.8.3",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "typescript": "^3.8.3"
   },
   "description": "r story book",
   "main": "dist/index.js",
