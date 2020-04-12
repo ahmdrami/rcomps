@@ -2,7 +2,9 @@
 import { Fragment, FunctionComponent } from 'react'
 import { jsx } from 'theme-ui'
 type ButtonProps = {
+  /** Click hander */
   onClick?: any
+  /** Color of the button */
   variant: 'secondary' | 'primary'
 }
 /**
