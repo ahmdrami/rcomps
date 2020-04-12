@@ -1,9 +1,20 @@
 import React, { FunctionComponent } from 'react'
-import StyledButton from './Button'
-
-export const Default: FunctionComponent = () => <StyledButton variant="secondary">Hi</StyledButton>
+import Button from './Button'
+import { action } from '@storybook/addon-actions'
 
 export default {
   title: 'Components|Button',
-  component: StyledButton,
+  component: Button,
 }
+
+export const primary: FunctionComponent = () => (
+  <Button variant="primary" onClick={action('Clicked')}>
+    Hi
+  </Button>
+)
+
+export const secondary: FunctionComponent = () => (
+  <Button variant="secondary" onClick={action('Clicked')}>
+    Hi
+  </Button>
+)

@@ -1,21 +1,34 @@
-import React, { FunctionComponent } from 'react'
-import { Button } from 'theme-ui'
-type StyledButtonProps = {
+/** @jsx jsx */
+import { Fragment, FunctionComponent } from 'react'
+import { jsx } from 'theme-ui'
+type ButtonProps = {
   onClick?: any
   variant: 'secondary' | 'primary'
 }
 /**
-- An example button
-**/
-const StyledButton: FunctionComponent<StyledButtonProps> = ({
-  variant,
+ * An example button
+ **/
+const Button: FunctionComponent<ButtonProps> = ({
+  variant = 'primary',
   children,
+  ...props
 }) => {
   return (
-    <>
-      <Button variant={variant}> {children}</Button>
-    </>
+    <Fragment>
+      <button
+        sx={{
+          variant: `buttons.${variant}`,
+          padding: 3,
+          borderColor: 'currentColor',
+          borderRadius: 2,
+          fontSize: [12, 14, 16],
+        }}
+        {...props}
+      >
+        {children}
+      </button>
+    </Fragment>
   )
 }
 
-export default StyledButton
+export default Button
