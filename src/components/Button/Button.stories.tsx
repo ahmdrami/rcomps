@@ -1,22 +1,19 @@
 import React from 'react'
-import { Button } from 'theme-ui'
 import { action } from '@storybook/addon-actions'
 import { select, withKnobs } from '@storybook/addon-knobs'
+import StyledButton from './Button'
 
 export default {
-  title: 'Component|Button',
-  component: Button,
+  title: 'Component|StyledButton',
+  component: StyledButton,
   decorators: [withKnobs],
 }
 
-export const Default = () => (
-  <Button onClick={action('click')}>Primary Button</Button>
-)
 export const Secondary = () => (
-  <Button
+  <StyledButton
     variant={select('Variant', ['primary', 'secondary'], 'primary')}
     onClick={action('click')}
   >
-    Secondary Button
-  </Button>
+    Styled Button
+  </StyledButton>
 )

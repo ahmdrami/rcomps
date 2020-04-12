@@ -1,12 +1,22 @@
 import React, { FunctionComponent } from 'react'
 import { Button } from 'theme-ui'
 
-type CButtonType = {
-  onClick: any
+interface StyledButtonProps {
+  onClick?: any
+  variant: 'secondary' | 'primary'
+}
+/**
+- An example button
+**/
+const StyledButton: FunctionComponent<StyledButtonProps> = ({
+  variant,
+  children,
+}) => {
+  return (
+    <>
+      <Button variant={variant}> {children}</Button>
+    </>
+  )
 }
 
-const CButton: FunctionComponent<CButtonType> = ({ children, ...props }) => {
-  return <Button {...props}> {children}</Button>
-}
-
-export default CButton
+export default StyledButton
