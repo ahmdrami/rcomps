@@ -1,6 +1,6 @@
 {
   "name": "arrcomps",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "dependencies": {
     "gsap": "^3.2.6",
     "react": "^16.13.1",
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "prepublish": "yarn build",
+    "prepare": "yarn build",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
