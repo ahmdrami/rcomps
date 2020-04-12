@@ -1,5 +1,5 @@
 {
-  "name": "rcomps",
+  "name": "@rami/rcomps",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -68,6 +68,7 @@
   },
   "description": "r story book",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:ahmdrami/rcomps.git",
   "author": "Ahmad Rami <ahmadramen@gmail.com>",
   "license": "MIT"
