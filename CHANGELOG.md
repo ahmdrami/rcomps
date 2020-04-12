@@ -1,3 +1,16 @@
+# v0.1.7 (Sun Apr 12 2020)
+
+#### 🐛 Bug Fix
+
+- removed webpack config [#6](https://github.com/ahmdrami/rcomps/pull/6) ([@ahmdrami](https://github.com/ahmdrami))
+- Release script [#5](https://github.com/ahmdrami/rcomps/pull/5) ([@ahmdrami](https://github.com/ahmdrami))
+
+#### Authors: 1
+
+- Ahmad Rami ([@ahmdrami](https://github.com/ahmdrami))
+
+---
+
 # v0.1.6 (Sun Apr 12 2020)
 
 #### 🐛 Bug Fix
