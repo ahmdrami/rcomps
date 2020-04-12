@@ -1,6 +1,6 @@
 {
   "name": "arrcomps",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "dependencies": {
     "gsap": "^3.2.6",
     "react": "^16.13.1",
