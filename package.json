@@ -1,5 +1,5 @@
 {
-  "name": "rcomps",
+  "name": "arrcomps",
   "version": "0.1.4",
   "dependencies": {
     "gsap": "^3.2.6",
