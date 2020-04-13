@@ -76,6 +76,8 @@
     }
   },
   "lint-staged": {
-    "*.test.{ts, tsx}": "yarn test"
+    "*.{ts, tsx}": [
+      "jest --bail --findRelatedTests"
+    ]
   }
 }

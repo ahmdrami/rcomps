@@ -1,17 +1,15 @@
 import React from 'react'
 import { screen, render } from '@testing-library/react'
-import StyledButton from './Button'
+import Button from './Button'
 
 describe('Button', () => {
   test('should render the component', () => {
-    render(<StyledButton variant="primary">Hi</StyledButton>)
+    render(<Button variant="primary">Hi</Button>)
     expect(screen.getByText(/hi/i)).toBeInTheDocument()
   })
 
   test('should create a snaphot', () => {
-    const { asFragment } = render(
-      <StyledButton variant="primary">Hi</StyledButton>
-    )
+    const { asFragment } = render(<Button variant="primary">Hi</Button>)
     expect(asFragment()).toMatchSnapshot()
   })
 })
