@@ -15,8 +15,8 @@ if (!name || !saveLocation) {
   saveLocation &&
   !saveLocation.match(/^\.\/src.*\/$|^src.*\/$/)
 ) {
-  console.error('Root directory must be src/')
-  process.exit()
+  console.error('Destination path should start with src/ and ends with / e.g. src/components/')
+  process.exit(1)
 }
 const component = `
 import React, { FunctionComponent } from 'react'
@@ -104,12 +104,13 @@ function generateTemplate({ component, name, location, fileName }) {
   const template = handlebars.compile(component)
   const content = template({ name })
 
-  const dirname = `${location}/${name}/`
+  const dirname = `${location}${name}/`
   try {
     if (!fs.existsSync(dirname)) {
       fs.mkdirSync(dirname)
     }
     fs.writeFileSync(`${dirname}${fileName}`, content)
+    console.log(`Successfully created: ${dirname}${fileName}`)
   } catch (error) {
     console.error(error)
     process.exit()
