@@ -13,6 +13,7 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "template": "./scripts/template.js",
     "release": "auto shipit"
   },
   "files": [
@@ -60,12 +61,23 @@
     "source-map-loader": "^0.2.4",
     "ts-jest": "^25.3.1",
     "ts-loader": "^6.2.2",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "handlebars": "^4.7.6"
   },
   "description": "r story book",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "git@github.com:ahmdrami/rcomps.git",
   "author": "Ahmad Rami <ahmadramen@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "jest --bail --findRelatedTests"
+    ]
+  }
 }
