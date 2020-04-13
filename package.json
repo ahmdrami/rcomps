@@ -76,6 +76,6 @@
     }
   },
   "lint-staged": {
-    "*.{ts, tsx}": "yarn test"
+    "*.test.{ts, tsx}": "yarn test"
   }
 }
