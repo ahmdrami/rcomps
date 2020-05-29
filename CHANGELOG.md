@@ -1,3 +1,15 @@
+# v0.1.9 (Fri May 29 2020)
+
+#### 🐛 Bug Fix
+
+- Themeui update [#9](https://github.com/ahmdrami/rcomps/pull/9) ([@ahmdrami](https://github.com/ahmdrami))
+
+#### Authors: 1
+
+- Ahmad Rami ([@ahmdrami](https://github.com/ahmdrami))
+
+---
+
 # v0.1.8 (Fri May 29 2020)
 
 #### 🐛 Bug Fix
