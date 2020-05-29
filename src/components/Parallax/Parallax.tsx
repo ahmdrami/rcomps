@@ -32,12 +32,7 @@ const Parallax: React.FunctionComponent<ParallaxProps> = ({ image, title }) => {
   }
 
   return (
-    <Grid
-      ref={rootEl}
-      onMouseMove={onMouseOver}
-      gap={0}
-      sx={{ height: '100%' }}
-    >
+    <Grid ref={rootEl} onMouseMove={onMouseOver} gap={0} sx={{ height: '100%' }}>
       <Styled.h1
         sx={{
           gridRow: 1,
@@ -52,11 +47,7 @@ const Parallax: React.FunctionComponent<ParallaxProps> = ({ image, title }) => {
         {title}
       </Styled.h1>
       <div sx={{ gridRow: 1, gridColumn: 1 }}>
-        <img
-          sx={{ height: '100vh', width: '100%', objectFit: 'cover' }}
-          src={image}
-          alt="Balloons"
-        />
+        <img sx={{ height: '100vh', width: '100%', objectFit: 'cover' }} src={image} alt="Balloons" />
       </div>
     </Grid>
   )

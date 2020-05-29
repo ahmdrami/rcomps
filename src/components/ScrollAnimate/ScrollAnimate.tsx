@@ -1,11 +1,10 @@
 import React, { FunctionComponent, useRef, useEffect, useState } from 'react'
-import { ScrollAnimateProps } from './ScrollAnimate.model'
 import gsap from 'gsap'
 import { Box } from 'theme-ui'
 
 let scrollPercent
 
-const ScrollAnimate: FunctionComponent<ScrollAnimateProps> = ({ children }) => {
+const ScrollAnimate: FunctionComponent = () => {
   const eleRef = useRef(null)
 
   const [latestKnownScrollY, setLatestKnownScrollY] = useState(0)
@@ -22,12 +21,12 @@ const ScrollAnimate: FunctionComponent<ScrollAnimateProps> = ({ children }) => {
     setTicking(false)
     // console.log(window.scrollY)
     scrollPercent = window.scrollY / window.innerHeight
-    gsap.to(action, {time: scrollPercent});
+    gsap.to(action, { time: scrollPercent })
 
     // action.tweenTo(scrollPercent)
     // console.log(scrollPercent)
 
-    var progressAction = scrollPercent * 1.05 // factor x
+    // const progressAction = scrollPercent * 1.05 // factor x
 
     // if (latestKnownScrollY > lastScrollTop) {
     //   // downscroll
