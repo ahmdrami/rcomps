@@ -1,4 +1,5 @@
 #!/usr/local/bin/node
+/* eslint-disable @typescript-eslint/no-var-requires */
 
 const fs = require('fs')
 const handlebars = require('handlebars')
@@ -11,10 +12,7 @@ const saveLocation = params[1]
 if (!name || !saveLocation) {
   console.error('Missing args component name and location')
   process.exit()
-} else if (
-  saveLocation &&
-  !saveLocation.match(/^\.\/src.*\/$|^src.*\/$/)
-) {
+} else if (saveLocation && !saveLocation.match(/^\.\/src.*\/$|^src.*\/$/)) {
   console.error('Destination path should start with src/ and ends with / e.g. src/components/')
   process.exit(1)
 }
@@ -123,5 +121,5 @@ data.forEach(({ component, name, fileName }) =>
     fileName,
     name,
     location: saveLocation,
-  })
+  }),
 )
