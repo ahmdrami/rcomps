@@ -117,6 +117,7 @@ function generateTemplate({ component, name, location, fileName }) {
   }
 }
 
+
 data.forEach(({ component, name, fileName }) =>
   generateTemplate({
     component,

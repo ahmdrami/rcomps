@@ -3,7 +3,11 @@ import { jsx, Grid, Styled } from 'theme-ui'
 import { useRef } from 'react'
 import gsap from 'gsap'
 
-const Parallax: React.FunctionComponent = () => {
+type ParallaxProps = {
+  image: string
+  title: string
+}
+const Parallax: React.FunctionComponent<ParallaxProps> = ({ image, title }) => {
   const rootEl = useRef(null)
   const onMouseOver = (event: any) => {
     event.preventDefault()
@@ -45,12 +49,12 @@ const Parallax: React.FunctionComponent = () => {
           fontSize: 96,
         }}
       >
-        HOT AIR BALLOONS
+        {title}
       </Styled.h1>
       <div sx={{ gridRow: 1, gridColumn: 1 }}>
         <img
           sx={{ height: '100vh', width: '100%', objectFit: 'cover' }}
-          src="/static/images/balloons.jpg"
+          src={image}
           alt="Balloons"
         />
       </div>

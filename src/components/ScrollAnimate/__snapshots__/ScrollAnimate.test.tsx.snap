@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScrollAnimate should create a snaphot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-ecqpax"
+  >
+    <div
+      class="css-5ve7pg"
+    />
+  </div>
+</DocumentFragment>
+`;
