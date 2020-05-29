@@ -1,5 +1,7 @@
 export default {
+  breakpoints: ['40em', '56em', '64em'],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  radii: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
     body: 'system-ui, -apple-system, BlinkMacSystemFont, "Roboto", sans-serif',
     heading: 'inherit',
@@ -15,12 +17,56 @@ export default {
     body: 1.5,
     heading: 1.125,
   },
+  useColorSchemeMediaQuery: true, // @media (prefers-color-scheme: dark)
   colors: {
     text: '#000',
     background: '#fff',
     primary: '#FF1654',
     secondary: '#247BA0',
     muted: '#f6f6f6',
+    accent: '',
+    highlight: '',
+    sizes: {
+      container: ['40em', '56em', '64em'],
+    },
+    modes: {
+      dark: {
+        text: '#000',
+        background: '#fff',
+        primary: '#FF1654',
+        secondary: '#247BA0',
+        muted: '#f6f6f6',
+        accent: '',
+        highlight: '',
+      },
+      papaya: {
+        // this color mode will fallback to the root color object
+        // for values not defined here
+        text: '#433',
+        background: 'papayawhip',
+      },
+    },
+  },
+  links: {
+    bold: {
+      fontWeight: 'bold',
+    },
+    nav: {
+      fontWeight: 'bold',
+      color: 'inherit',
+      textDecoration: 'none',
+    },
+  },
+  text: {
+    caps: {
+      textTransform: 'uppercase',
+      letterSpacing: '0.2em',
+    },
+    heading: {
+      fontFamily: 'heading',
+      fontWeight: 'heading',
+      lineHeight: 'heading',
+    },
   },
   styles: {
     root: {
@@ -106,6 +152,18 @@ export default {
     img: {
       maxWidth: '100%',
     },
+    progress: {
+      color: 'red',
+    },
+    donut: {
+      color: 'red',
+    },
+    spinner: {
+      color: 'red',
+    },
+    close: {
+      color: 'primary',
+    },
   },
   buttons: {
     primary: {
@@ -118,6 +176,85 @@ export default {
     secondary: {
       color: 'background',
       bg: 'secondary',
+      '&:hover': {
+        bg: 'text',
+      },
+    },
+  },
+  images: {
+    avatar: {
+      width: 48,
+      height: 48,
+      borderRadius: 99999,
+    },
+  },
+  cards: {
+    primary: {
+      padding: 2,
+      borderRadius: 4,
+      boxShadow: '0 0 8px rgba(0, 0, 0, 0.125)',
+    },
+    compact: {
+      padding: 1,
+      borderRadius: 2,
+      border: '1px solid',
+      borderColor: 'muted',
+    },
+  },
+  forms: {
+    label: {
+      fontSize: 1,
+      fontWeight: 'bold',
+    },
+    input: {
+      borderColor: 'gray',
+      '&:focus': {
+        borderColor: 'primary',
+        boxShadow: (t: any) => `0 0 0 2px ${t.colors.primary}`,
+        outline: 'none',
+      },
+    },
+    select: {
+      borderColor: 'gray',
+      '&:focus': {
+        borderColor: 'primary',
+        boxShadow: (t: any) => `0 0 0 2px ${t.colors.primary}`,
+        outline: 'none',
+      },
+    },
+    textarea: {
+      borderColor: 'gray',
+      '&:focus': {
+        borderColor: 'primary',
+        boxShadow: (t: any) => `0 0 0 2px ${t.colors.primary}`,
+        outline: 'none',
+      },
+    },
+    slider: {
+      bg: 'muted',
+    },
+    radio: {},
+    checkbox: {},
+  },
+  badges: {
+    primary: {
+      color: 'background',
+      bg: 'primary',
+    },
+    outline: {
+      color: 'primary',
+      bg: 'transparent',
+      boxShadow: 'inset 0 0 0 1px',
+    },
+  },
+  alerts: {
+    primary: {
+      color: 'background',
+      bg: 'primary',
+    },
+    muted: {
+      color: 'text',
+      bg: 'muted',
     },
   },
 }
