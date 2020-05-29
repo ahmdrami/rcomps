@@ -1,3 +1,15 @@
+# v0.1.10 (Fri May 29 2020)
+
+#### ⚠️  Pushed to `master`
+
+- removed buttons ([@ahmdrami](https://github.com/ahmdrami))
+
+#### Authors: 1
+
+- Ahmad Rami ([@ahmdrami](https://github.com/ahmdrami))
+
+---
+
 # v0.1.9 (Fri May 29 2020)
 
 #### 🐛 Bug Fix
