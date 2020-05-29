@@ -1,6 +1,6 @@
 {
   "name": "arrcomps",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "dependencies": {
     "eslint-plugin-react": "^7.20.0",
     "gsap": "^3.2.6",
