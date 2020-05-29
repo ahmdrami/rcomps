@@ -1,3 +1,16 @@
+# v0.1.8 (Fri May 29 2020)
+
+#### 🐛 Bug Fix
+
+- fixed tests [#8](https://github.com/ahmdrami/rcomps/pull/8) ([@ahmdrami](https://github.com/ahmdrami))
+- Template script [#7](https://github.com/ahmdrami/rcomps/pull/7) ([@ahmdrami](https://github.com/ahmdrami))
+
+#### Authors: 1
+
+- Ahmad Rami ([@ahmdrami](https://github.com/ahmdrami))
+
+---
+
 # v0.1.7 (Sun Apr 12 2020)
 
 #### 🐛 Bug Fix
